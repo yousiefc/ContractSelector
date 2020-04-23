@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package selectcontract;
 
 import java.io.BufferedReader;
@@ -20,7 +16,7 @@ import oracle.jdbc.OracleCallableStatement;
 import oracle.jdbc.OracleTypes;
 /**
  *
- * @author shmazool
+ * @author C Yousief
  */
 class ContractModel {
     public static final int NUMBER_OF_CONTRACT_ATTRIBUTES = 4;
@@ -82,32 +78,7 @@ class ContractModel {
                 e.printStackTrace();
             }
         }
-        /*String filename = "/home/shmazool/NetBeansProjects/SelectContract07/contracts.txt";
-        
-        try{
-            FileReader fileReader = new FileReader(filename);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String line;
-            
-            while((line=bufferedReader.readLine()) != null) {
-                String[] tokens = line.split(",",NUMBER_OF_CONTRACT_ATTRIBUTES);
-                
-                String contractID = tokens[INDEX_OF_CONTRACT_ID];
-                contractIDs.add(contractID.toUpperCase());
-                String originCity = tokens[INDEX_OF_ORIGIN_CITY];
-                originCityList.add(originCity);
-                String destCity = tokens[INDEX_OF_DEST_CITY];
-                String orderItem = tokens[INDEX_OF_ORDER_ITEM];
-                
-                Contract dataContract = new Contract (contractID, originCity, destCity, orderItem);
-                theContracts.add(dataContract);
-            }
-            originCityList.add("All");
-            theContractsAll = new ArrayList<>(theContracts);
-            fileReader.close();
-        }catch(IOException ex) {
-            System.out.println(ex.getMessage());
-        }*/
+
     }
     
     public void addContract(Contract contract){
